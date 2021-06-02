@@ -34,5 +34,13 @@ If the web datasets above don't match the semantics of your end use case, you ca
 
 The demo.sh script downloads a small corpus, consisting of the first 100M characters of Wikipedia. It collects unigram counts, constructs and shuffles cooccurrence data, and trains a simple version of the GloVe model. It also runs a word analogy evaluation script in python to verify word vector quality. More details about training on your own corpus can be found by reading [demo.sh](https://github.com/stanfordnlp/GloVe/blob/master/demo.sh) or the [src/README.md](https://github.com/stanfordnlp/GloVe/tree/master/src)
 
+The interactive work we created allows people to playfully gain an intuition for how computers understand language. It is called Everything You Ever Said (EYES), in reference to the way natural language models draw on all kinds of data sources for training.
+
+EYES allows you to take any piece of writing (less than 2000 characters) and "subtract" one concept and "add" another. In other words, it lets you use a computer to change the meaning of a piece of text. You can try it yourself https://www.everythingyoueversaid.art/
+
+At its core, EYES uses a model of the English language developed by researchers from Stanford University in the United States, called GLoVe (Global Vectors for Word Representation).
+
+EYES uses GLoVe to change the text by making a series of analogies, wherein an "analogy" is a comparison between one thing and another.
+ 
 ### License
 All work contained in this package is licensed under the Apache License, Version 2.0. See the include LICENSE file.
